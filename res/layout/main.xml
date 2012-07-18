@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ImageHolder"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="right"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5pt"
+        android:layout_marginTop="5pt"
+        android:gravity="center"
+        android:text="@string/hello"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="16pt" />
+
+    <TextView
+        android:id="@+id/Result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10pt"
+        android:layout_marginTop="15pt"
+        android:gravity="center"
+        android:text="@string/Result"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="12pt" />
+
+    <TextView
+        android:id="@+id/gameOver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/gameOver"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/RemainingCardsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/RemainingCards"
+        android:textAppearance="?android:attr/textAppearanceLarge" android:layout_marginTop="10pt"/>
+
+    <LinearLayout
+        android:id="@+id/RemainingCardsHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5pt" >
+
+        <TextView
+            android:id="@+id/Player1CardsLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/RemainingCardsP1"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="8pt" android:layout_marginRight="30pt"/>
+
+        <TextView
+            android:id="@+id/Player2CardsLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/RemainingCardsP2"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="8pt" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ImageHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/FirstPlayerCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginRight="30pt"
+            android:layout_weight="3"
+            android:src="@drawable/clubs2" />
+
+        <ImageView
+            android:id="@+id/SecondPlayerCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="3"
+            android:src="@drawable/diamonds2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/CardResultHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:isScrollContainer="true" android:layout_marginTop="5pt" android:layout_marginBottom="10pt">
+
+        <TextView
+            android:id="@+id/FirstPlayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10pt"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="@string/FirstPlayerCard"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/SecondPlayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10pt"
+            android:layout_weight="3"
+            android:text="@string/SecondPlayerCard"
+            android:textAppearance="?android:attr/textAppearanceLarge" android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ButtonHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5pt"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/Play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Play" />
+
+        <Button
+            android:id="@+id/Exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Exit" />
+
+    </LinearLayout>
+
+</LinearLayout>

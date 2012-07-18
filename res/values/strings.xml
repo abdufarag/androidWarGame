@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Ready for a WAR?</string>
+    <string name="app_name">Hw3 - WarGame</string>
+    <string name="Play">Start/Play</string>
+    <string name="Result">Round result</string>
+    <string name="FirstPlayerCard">1st Player</string>
+    <string name="SecondPlayerCard">2nd Player</string>
+    <string name="RemainingCards">Remaing Cards</string>
+    <string name="RemainingCardsP1">26</string>
+    <string name="RemainingCardsP2">26</string>
+    <string name="gameOver"></string>
+    <string name="Exit">Exit</string>
+
+</resources>
